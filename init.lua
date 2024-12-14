@@ -189,6 +189,13 @@ require('lazy').setup({
   {
     'https://github.com/tpope/vim-fugitive.git',
   },
+  --Live Server Plugin
+  {
+    'barrett-ruth/live-server.nvim',
+    build = 'pnpm add -g live-server',
+    cmd = { 'LiveServerStart', 'LiveServerStop' },
+    config = true,
+  },
 
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
