@@ -38,3 +38,5 @@ vim.schedule(function()
     list:add()
   end, { desc = "Add File to Harpoon" })
 end)
+
+vim.keymap.set("n", "<leader>jd", vim.lsp.buf.definition, { desc = "Jump to Definition" })
